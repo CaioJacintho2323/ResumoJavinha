@@ -1,4 +1,4 @@
-package com.caiojacintho.runtime;
+package com.caiojacintho.javacore.allexception.runtime;
 
 import java.io.IOException;
 

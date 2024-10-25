@@ -1,8 +1,8 @@
-package com.caiojacintho.exception;
+package com.caiojacintho.javacore.allexception.exception;
 
-import com.caiojacintho.exception.dominio.Funcionario;
-import com.caiojacintho.exception.dominio.LoginInvalidoException;
-import com.caiojacintho.exception.dominio.Pessoa;
+import com.caiojacintho.javacore.allexception.exception.dominio.Funcionario;
+import com.caiojacintho.javacore.allexception.exception.dominio.LoginInvalidoException;
+import com.caiojacintho.javacore.allexception.exception.dominio.Pessoa;
 
 import java.io.FileNotFoundException;
 

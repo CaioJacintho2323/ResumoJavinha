@@ -1,6 +1,6 @@
-package com.caiojacintho.exception;
+package com.caiojacintho.javacore.allexception.exception;
 
-import com.caiojacintho.exception.dominio.LoginInvalidoException;
+import com.caiojacintho.javacore.allexception.exception.dominio.LoginInvalidoException;
 
 import java.util.Scanner;
 

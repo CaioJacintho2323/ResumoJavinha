@@ -1,4 +1,4 @@
-package com.caiojacintho.error;
+package com.caiojacintho.javacore.allexception;
 
 public class Main {
     public static void main(String[] args) {

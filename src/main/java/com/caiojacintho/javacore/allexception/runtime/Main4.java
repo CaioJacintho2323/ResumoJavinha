@@ -1,4 +1,4 @@
-package com.caiojacintho.runtime;
+package com.caiojacintho.javacore.allexception.runtime;
 
 public class Main4 {
     public static void main(String[] args) {

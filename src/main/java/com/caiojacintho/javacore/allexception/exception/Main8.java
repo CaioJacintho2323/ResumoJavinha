@@ -1,7 +1,7 @@
-package com.caiojacintho.exception;
+package com.caiojacintho.javacore.allexception.exception;
 
-import com.caiojacintho.exception.dominio.Leitor1;
-import com.caiojacintho.exception.dominio.Leitor2;
+import com.caiojacintho.javacore.allexception.exception.dominio.Leitor1;
+import com.caiojacintho.javacore.allexception.exception.dominio.Leitor2;
 
 import java.io.*;
 

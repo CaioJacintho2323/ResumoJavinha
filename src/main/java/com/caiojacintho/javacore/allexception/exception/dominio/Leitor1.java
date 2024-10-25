@@ -1,4 +1,4 @@
-package com.caiojacintho.exception.dominio;
+package com.caiojacintho.javacore.allexception.exception.dominio;
 
 import java.io.Closeable;
 import java.io.IOException;
