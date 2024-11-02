@@ -20,5 +20,6 @@ public class Filetest02 {
         File diretorioRenamed = new File("pasta2");
         boolean rename1 = fileDiretorio.renameTo(diretorioRenamed);
         System.out.println(rename1);
+
     }
 }
