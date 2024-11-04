@@ -23,7 +23,7 @@ public class PathTest02 {
         }
 
         Path source = filePath;
-        Path target = Paths.get(filePath.getParent().toString(), "file_rename.txt");
+        Path target = Paths.get(filePath.getParent().toString(), "file_rename2.txt");
         Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
     }
 }
