@@ -13,7 +13,7 @@ public class ResolveTest01 {
 
         Path absoluto = Paths.get("/home/caio");
         Path relativo = Paths.get("dev");
-        Path file = Paths.get("file.txt");
+        Path file = Paths.get("subsubarquivo1.txt");
         System.out.println("1" + absoluto.resolve(relativo));
         System.out.println("2" + absoluto.resolve(file));
         System.out.println("3" + relativo.resolve(absoluto));

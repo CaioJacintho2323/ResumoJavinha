@@ -16,7 +16,7 @@ public class PathTest02 {
 
         Path subPastaPath = Paths.get("pasta/subpasta/subsubpasta");
         Path subPastaDirectory = Files.createDirectories(subPastaPath);
-        Path filePath = Paths.get(subPastaPath.toString(), "file.txt");
+        Path filePath = Paths.get(subPastaPath.toString(), "subsubarquivo1.txt");
 
         if (Files.notExists(filePath)) {
             Path filePathCreated = Files.createFile(filePath);
