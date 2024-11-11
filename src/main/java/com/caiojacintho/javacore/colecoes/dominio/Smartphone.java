@@ -12,19 +12,8 @@ public class Smartphone {
     }
 
     @Override
-    public boolean equals(Object o) {
-       if(o == null) return false;
-       if(this == o) return true;
-       if(this.getClass() != o.getClass()) return false;
-       Smartphone smartphone = (Smartphone) o;
-       return serialNumber != null & serialNumber.equals(smartphone.serialNumber);
-    }
-
-
-
-    @Override
     public int hashCode() {
-        return Objects.hashCode(serialNumber);
+        return serialNumber == null ? 0 : this.serialNumber.hashCode();
     }
 
     public String getSerialNumber() {
