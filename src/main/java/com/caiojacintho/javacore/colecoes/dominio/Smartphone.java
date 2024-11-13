@@ -12,6 +12,15 @@ public class Smartphone {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == null) return false;
+        if (this == obj) return true;
+        if (this.getClass() != obj.getClass()) return false;
+        Smartphone smartphone = (Smartphone) obj;
+        return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
+    }
+
+    @Override
     public int hashCode() {
         return serialNumber == null ? 0 : this.serialNumber.hashCode();
     }
@@ -30,5 +39,13 @@ public class Smartphone {
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
     }
 }
