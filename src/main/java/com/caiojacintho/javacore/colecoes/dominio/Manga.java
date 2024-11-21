@@ -26,12 +26,20 @@ public class Manga implements Comparable<Manga> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Manga manga = (Manga) o;
-        return Double.compare(preco, manga.preco) == 0 && Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
+        return Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nome, preco);
+        return Objects.hash(id, nome);
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public Long getId() {
