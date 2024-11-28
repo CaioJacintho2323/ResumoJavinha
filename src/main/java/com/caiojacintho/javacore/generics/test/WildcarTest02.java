@@ -14,6 +14,9 @@ public class WildcarTest02 {
         for (animal animal : animals) {
             animal.consulta();
         }
-
+    }
+    private static void printConsultaAnimal(List<? super animal> animals) {
+        animals.add(new cachorro());
+        animals.add(new gato());
     }
 }
