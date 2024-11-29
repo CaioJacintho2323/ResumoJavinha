@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BarcoRentavelService {
-    private List<Barco> barcosDisponiveis = new ArrayList<>(List.of(new Barco("Lancha")));
+    private List<Barco> barcosDisponiveis = new ArrayList<>(List.of(new Barco("Lancha"), new Barco("iate")));
 
 
-    public Barco buscarbarcoDisponivel() {
+    public Barco buscarBarcoDisponivel() {
         System.out.println("buscando Barco disponivel...");
         Barco barco = barcosDisponiveis.remove(0);
         System.out.println("alugando Barco : " + barco);
@@ -17,7 +17,7 @@ public class BarcoRentavelService {
         System.out.println(barcosDisponiveis);
         return barco;
     }
-    public void retornarbarcoAlugado(Barco barco){
+    public void retornarBarcoAlugado(Barco barco){
         System.out.println("devolvendo Barco" + barco);
         barcosDisponiveis.add(barco);
         System.out.println("barcos disponiveis : ");
