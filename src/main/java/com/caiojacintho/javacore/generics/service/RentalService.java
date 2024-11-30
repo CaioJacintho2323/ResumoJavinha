@@ -24,5 +24,6 @@ public class RentalService<T> {
         objetosDisponiveis.add(t);
         System.out.println("objeto disponiveis : ");
         System.out.println(objetosDisponiveis);
+
     }
 }

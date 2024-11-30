@@ -1,6 +1,5 @@
 package com.caiojacintho.javacore.generics.service;
 
-import com.caiojacintho.javacore.Serializacao.dominio.Aluno;
 import com.caiojacintho.javacore.generics.dominio.Carro;
 
 import java.util.ArrayList;
@@ -9,6 +8,9 @@ import java.util.List;
 public class CarroRentavelService {
     private List<Carro> carrosDisponiveis = new ArrayList<>(List.of(new Carro("BWM"), new Carro("MERCEDES")));
 
+    public CarroRentavelService() {
+        this.carrosDisponiveis = carrosDisponiveis;
+    }
 
     public Carro buscarCarroDisponivel() {
         System.out.println("buscando carro disponivel...");
