@@ -2,7 +2,7 @@ package com.caiojacintho.javacore.classesInternas.test;
 
 public class ClassesdeForaTest01 {
     private String nome = "caio jacintho";
-
+    //NESTED
     class ClasseDeDentro{
         public void imprimirAtributoDaClasseDeFora(){
             System.out.println(nome);
