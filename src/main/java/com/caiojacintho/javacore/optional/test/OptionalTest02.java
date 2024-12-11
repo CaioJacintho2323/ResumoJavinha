@@ -11,8 +11,11 @@ public class OptionalTest02 {
         caio.ifPresent(manga -> manga.setTitle("Caio Jacintho"));
         System.out.println(caio);
 
-        Manga manga = MangaRepository.findById(4).orElseThrow(IllegalArgumentException::new);
+        Manga manga = MangaRepository.findById(1).orElseThrow(IllegalArgumentException::new);
         System.out.println(manga);
+
+        Manga orElse = MangaRepository.findByTitle("ss").orElseGet(() -> new Manga(4, "ss", 20));
+        System.out.println(orElse);
 
     }
 }
