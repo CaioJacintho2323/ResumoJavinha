@@ -5,6 +5,6 @@ import java.io.FileNotFoundException;
 public class Pessoa {
 
     public void salvar() throws LoginInvalidoException, FileNotFoundException {
-        System.out.println("Salvando Pessoa");
+        System.out.println("Salvando Person");
     }
 }
